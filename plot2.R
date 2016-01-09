@@ -14,7 +14,7 @@ d$Time <- strptime( x=paste(d$Date,d$Time), format="%Y-%m-%d %H:%M:%S", tz="UTC"
 # Plot 2
 # Line graph of Global_active_power by time
 
-png( "plot2.png", width = 480, height = 480, bg = "transparent" )
+png( "plot2.png", width = 480, height = 480 )
 plot(x=d$Time,
      y=d$Global_active_power,
      type="l",

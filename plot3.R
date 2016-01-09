@@ -14,7 +14,7 @@ d$Time <- strptime( x=paste(d$Date,d$Time), format="%Y-%m-%d %H:%M:%S", tz="UTC"
 # Plot 3
 # Multi-line graph of each Sub_metering by time
 
-png( "plot3.png", width = 480, height = 480, bg = "transparent" )
+png( "plot3.png", width = 480, height = 480 )
 plot( x=d$Time, y=d$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="" )
 points( x=d$Time, y=d$Sub_metering_2, col="red", type="l" )
 points( x=d$Time, y=d$Sub_metering_3, col="blue", type="l" )

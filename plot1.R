@@ -10,7 +10,7 @@ d <- d[(d$Date == as.Date('2007-02-01')) | ( d$Date == as.Date('2007-02-02')),]
 # Plot 1
 # Histogram of Global_active_power
 
-png( "plot1.png", width = 480, height = 480, bg = "transparent" )
+png( "plot1.png", width = 480, height = 480 )
 hist( d$Global_active_power,
      col = "red",
      main = "Global Active Power",
